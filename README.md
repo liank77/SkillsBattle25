@@ -24,4 +24,13 @@ sqlmap is a penetration testing tool that automates the process of detecting and
 
 Wireshark is a PCAP analysis tool which allows you to analyze and record network traffic.
 
+### Hashcat
+
+[Hashcat](https://hashcat.net/hashcat/)
+
+```bash
+hashcat -a 0 -m 3200 hash.txt new_Possible_Passwd.txt --force
+
+```
+
 
