@@ -29,7 +29,7 @@ Wireshark is a PCAP analysis tool which allows you to analyze and record network
 [Hashcat](https://hashcat.net/hashcat/)
 
 ```bash
-# in hash.txt kommt hash und in new_Possible_Passwd.txt die möglichen Passwörter
+# in hash.txt kommt hash und in new_Possible_Passwd.txt die möglichen Passwörter. 3200 steht für Modus --> nachschauen in Wiki
 hashcat -a 0 -m 3200 -d 1 hash.txt new_Possible_Passwd.txt
 
 # zeigt gespeicherte Hashes von diesem File
