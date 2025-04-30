@@ -29,7 +29,20 @@ Wireshark is a PCAP analysis tool which allows you to analyze and record network
 [Hashcat](https://hashcat.net/hashcat/)
 
 ```bash
-hashcat -a 0 -m 3200 hash.txt new_Possible_Passwd.txt --force
+# in hash.txt kommt hash und in new_Possible_Passwd.txt die möglichen Passwörter
+hashcat -a 0 -m 3200 -d 1 hash.txt new_Possible_Passwd.txt
+
+# zeigt gespeicherte Hashes von diesem File
+hashcat -a 0 -m 3200 --show hash.txt
+
+
+# Gespeicherte Hashes sind dort abgelegt
+find .venv -name "hashcat.potfile"
+
+# Lösche gespeicherte Hashes
+rm .venv/lib/python3.11/site-packages/hashcat/hashcat/hashcat.potfile
+
+
 
 ```
 
