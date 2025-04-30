@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Replace 'file_name' with your actual file name
-file_name="/home/lian/Schreibtisch/rockyou.txt"
+file_name="/home/lian/Schreibtisch/SkillsBattle25/rockyou.txt"
 
 # Create a new file to store filtered passwords
 new_Possible_Passwd="new_Possible_Passwd.txt"
